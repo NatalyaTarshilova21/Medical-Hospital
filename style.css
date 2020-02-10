@@ -1,0 +1,223 @@
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+
+main {
+  display: block;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+
+
+
+
+
+body {
+    font-family: Arial ;
+    font-size: 15px;
+   margin: 0;
+    color: #888;
+    line-height: 10px;
+    text-align: center;
+    
+}
+h1, h2 {
+	margin-top: 10px;
+	font-size: 38px;
+    font-weight: 900;
+    color: #555;
+    line-height: 40px;
+   
+}
+
+h3 {
+	font-size: 22px;
+    
+    color: #555;
+}
+
+h5 {
+    color:black;
+}
+
+img {
+  border-style: none;
+}
+/**панель навигации**/
+
+.navbar {
+	margin-bottom: 0;
+	background: #ffffff;
+	border: 0;
+	-o-transition: all .6s; -moz-transition: all .6s; -webkit-transition: all .6s; -ms-transition: all .6s; transition: all .6s;
+}
+.navbar.navbar-no-bg { background: #ffffff; background: rgba(0, 0, 0, 0.2); }
+
+.navbar-right { margin-right: 0; }
+
+ul.navbar-nav {
+	font-size: 15px;
+	color: #444;
+	text-transform: uppercase;
+}
+
+.navbar-inverse ul.navbar-nav li a { padding-top: 20px; padding-bottom: 20px; color: #444; opacity: 0.8; }
+.navbar-inverse ul.navbar-nav li a:hover { color: #444; opacity: 1; }
+.navbar-inverse ul.navbar-nav li a:focus { color: #444; outline: 0; opacity: 1; }
+
+.navbar-text a {
+	margin: 0 8px;
+	font-size: 26px;
+	color: #444;
+	line-height: 28px;
+	opacity: 0.8;
+}
+.navbar-text a:hover { opacity: 1; }
+
+.navbar-toggle {
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+
+.button {
+	display: inline-block;
+	height: 50px;
+	margin: 0 5px;
+	padding: 16px 40px 0 40px;
+	
+	background: #1e90ff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1e90ff 0%, #1e90ff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e90ff), color-stop(100%,#1e90ff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1e90ff 0%,#1e90ff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1e90ff 0%,#1e90ff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1e90ff 0%,#1e90ff 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #1e90ff 0%,#1e90ff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e90ff', endColorstr='#1e90ff',GradientType=0 ); /* IE6-9 */
+	
+	border: 0;
+	
+	font-size: 15px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    -moz-border-radius: 40px; -webkit-border-radius: 40px; border-radius: 40px;
+}
+
+.footer  fa-facebook  {
+    color: floralwhite;
+}
+/*slides*/
+.slides {
+    height:367px;
+    margin:50px auto;
+    overflow:hidden;
+    position:relative;
+    width:600px;
+
+}
+
+.slides ul {
+    list-style:none;
+    position:relative;
+
+}
+
+/* Кадры анимации #anim_slides */
+
+@-webkit-keyframes anim_slides {
+    0% {
+        opacity:0;
+    }
+    6% {
+        opacity:1;
+    }
+    24% {
+
+        opacity:1;
+    }
+    30% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+@-moz-keyframes anim_slides {
+    0% {
+        opacity:0;
+    }
+    6% {
+        opacity:1;
+    }
+    24% {
+        opacity:1;
+    }
+    30% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+ .slides ul li {
+    opacity:0;
+    position:absolute;
+    top:0;
+     /* анимация css3 */
+    -webkit-animation-name: anim_slides;
+    -webkit-animation-duration: 24.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: anim_slides;
+    -moz-animation-duration: 24.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+}
+
+/* Задержки css3 */
+.slides ul  li:nth-child(2), .slides ul  li:nth-child(2) div {
+    -webkit-animation-delay: 6.0s;
+    -moz-animation-delay: 6.0s;
+}
+.slides ul  li:nth-child(3), .slides ul  li:nth-child(3) div {
+    -webkit-animation-delay: 12.0s;
+    -moz-animation-delay: 12.0s;
+}
+.slides ul  li:nth-child(4), .slides ul  li:nth-child(4) div {
+    -webkit-animation-delay: 18.0s;
+    -moz-animation-delay: 18.0s;
+}
+.slides ul li img {
+    display:block;
+}
+
+
+
+
+
+
+
